@@ -1,0 +1,36 @@
+{
+  "name": "Knative Operator",
+  "description": "Knative Operator",
+  "logo": "_images/SalesStack.png",
+  "has_supporting_content": true,
+  "stack_id": "knative-operator",
+  "type": "stack",
+  "categories": ["Networking"],
+  "platform": "Kubernetes",
+  "cover": "cover.md",
+  "meta": {
+    "Networking": ["Knative"],
+    "Type":[
+         "Operators"
+      ],
+    "Install time": ["5 minutes"]
+  },
+"deployment_information": {
+  "Operator Project": "NA",
+  "Deployment Namespace": "operators"
+},
+  "commands": [
+  
+   {
+      "description": "Install Operator",
+      "exec": "kubectl create -f https://operatorhub.io/install/knative-operator.yaml"
+    }
+  ],
+  "display": [
+    {
+      "name": "Developer Dashboard",
+      "url": "##DNS.host##/codeserver",
+      "enabled": true
+    }
+  ]
+}

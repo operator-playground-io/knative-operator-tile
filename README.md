@@ -1,1 +1,1 @@
-# knative-operator-tile
+knative-operator-tile
