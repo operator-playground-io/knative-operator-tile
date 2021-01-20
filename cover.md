@@ -2,6 +2,21 @@
 
 ![Logo](_images/logo.PNG)
 
+# What is Knative?
+
+Knative is a set of open source components for Kubernetes that implements functionality to:
+
+run stateless workloads such as microservices
+event subscription, delivery and handling on Kubernetes clusters.
+
+Knative is implemented as a set of controllers you install on your Kubernetes cluster. Knative registers its own API types to Kubernetes API, so it's not too different than Kubernetes.
+
+Knative consists of two separate projects:
+
+**Knative Serving**: Run stateless services easier on Kubernetes, by making autoscaling, networking and rollouts easier. (Main focus of this guide.) Read how Knative makes running microservices apps on Kubernetes easier →
+
+**Knative Eventing**: Declaratively create subscriptions to event sources, and route events to Kubernetes endpoints in the cluster.
+
 
 # Knative Operator
 
