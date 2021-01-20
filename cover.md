@@ -1,42 +1,35 @@
-<h1 align="center">Prometheus Operator</h1>
+<h1 align="center">Knative Operator</h1>
 
 ![Logo](_images/logo.PNG)
 
 
-# Prometheus Operator
+# Knative Operator
 
-The Prometheus Operator for Kubernetes provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.
-
-Once installed, the Prometheus Operator provides the following features:
-
-- Create/Destroy: Easily launch a Prometheus instance for your Kubernetes namespace, a specific application or team easily using the Operator.
-
-- Simple Configuration: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
-
-- Target Services via Labels: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific   
-  configuration language.
-
-# Other Supported Features
-
-- High availability
-
-- Multiple instances are run across failure zones and data is replicated. This keeps your monitoring available during an outage, when you need it most.
-
-- Updates via automated operations
-
-- New Prometheus versions are deployed using a rolling update with no downtime, making it easy to stay up to date.
-
-- Handles the dynamic nature of containers
-
-- Alerting rules are attached to groups of containers instead of individual instances, which is ideal for the highly dynamic nature of container deployment.
+The Knative Operator defines custom resources for the Knative components, serving and eventing, enabling users to configure, install, upgrade and maintain these components over their lifecycle through a simple API.
 
 
-# Prometheus Operator Architecture
+# Knative Serving
+Knative Serving builds on Kubernetes to support deploying and serving of applications and functions as serverless containers. Serving is easy to get started with and scales to support advanced scenarios. Other features includes:
 
-A high level Prometheus Operator Architecture is shown below :
+Rapid deployment of serverless containers
 
+Automatic scaling up and down to zero
 
-![](_images/prometheus-architecture.png)
+Routing and network programming
+
+Point-in-time snapshots of deployed code and configurations
+
+# Knative Eventing
+Knative Eventing is a system that is designed to address a common need for cloud native development and provides composable primitives to enable late-binding event sources and event consumers. Knative Eventing is designed to address a common need for cloud native development:
+
+Services are loosely coupled during development and deployed independently
+
+A producer can generate events before a consumer is listening, and a consumer can express an interest in an event or class of events that is not yet being produced.
+
+Services can be connected to create new applications
+
+without modifying producer or consumer, and
+with the ability to select a specific subset of events from a particular producer.
 
 
 # Objective of tutorial
